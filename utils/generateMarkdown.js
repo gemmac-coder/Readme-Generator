@@ -1,3 +1,6 @@
+const inquirer = require("inquirer");
+const indexJS = require("./index.js");
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 
@@ -13,6 +16,7 @@ const renderLicenseSection = (license) => {};
 
 // TODO: Create a function to generate markdown for README
 const generateMarkdown = (data) => {
+  console.log(answers);
   return `# ${data.title}
 
 `;
