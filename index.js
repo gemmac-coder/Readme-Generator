@@ -1,58 +1,57 @@
 // TODO: Include packages needed for this application
 
+const inquirer = require("inquirer");
+
 // TODO: Create an array of questions for user input
 const questions = [
   {
     type: "input",
     message: "What is your application title?",
-    title: "applicationTitle",
+    name: "applicationTitle",
   },
   {
-    // question 2 - license - list
+    type: "list",
+    message: "What license does your application have?",
+    name: "applicationLicense",
+    choices: ["MIT", "Apache", "GPL", "BSD", "None"],
   },
   {
     type: "input",
     message: "How would you describe what your application is about?",
-    description: "applicationDescription",
-  },
-  {
-    // table of contents
+    name: "applicationDescription",
   },
   {
     type: "input",
     message:
       "What installation instructions would you give for your application?",
-    description: "installationInstructions",
+    name: "installationInstructions",
   },
   {
     type: "input",
     message: "What usage instructions would you give for your application?",
-    description: "usageInstructions",
-  },
-  {
-    // license
+    name: "usageInstructions",
   },
   {
     type: "input",
     message:
       "What contribution instructions can you give for your application?",
-    description: "contributionInstructions",
+    name: "contributionInstructions",
   },
   {
     type: "input",
     message: "Can you give any information on tests for your application?",
-    description: "testInformation",
+    name: "testInformation",
   },
   {
     type: "input",
     message: "Can you enter your GitHub profile URL?",
-    description: "githubProfile",
+    name: "githubProfile",
   },
   {
     type: "input",
     message:
       "Can you enter your email address for anyone wishing to get in touch?",
-    description: "emailAddress",
+    name: "emailAddress",
   },
 ];
 
@@ -60,7 +59,13 @@ const questions = [
 const writeToFile = (fileName, data) => {};
 
 // TODO: Create a function to initialize app
-const init = () => {};
+const init = async () => {
+  console.log("started");
+
+  const answers = await inquirer.prompt(questions);
+
+  console.log(answers);
+};
 
 // Function call to initialize app
 init();
