@@ -1,12 +1,8 @@
 # Project Title
 
-(Question 1 -input)
-
-![mit license](https://img.shields.io/badge/license-MIT-green) (Question 2 i.e. choices)
+![mit license](https://img.shields.io/badge/license-MIT-green)
 
 ## Description of Project
-
-example description of projects here (Question 3 - input)
 
 ## Table of Contents
 
@@ -27,36 +23,16 @@ npm install
 node index.js
 ```
 
-(Question 4 - ???)
-
 ## Usage
-
-- When the app is running, answer all of the questions. After all questions, view generated README markdown file.
-
-(Question 5 - input?)
 
 ## License
 
-MIT License
-
-(Will be same choice as Q2, don't ask question again as it will be same answer)
-
 ## Contributing
-
-Open an issue or a pull request and I will take a look.
-
-(Question 6 - input)
 
 ## Tests
 
-There are no tests for this application.
-
-(Question 7 - input)
-
 ## Questions
 
-- View my [GitHub]() profile (Question 8 - input)
+- View my [GitHub]() profile
 
 - Email me at example@email.com
-
-(Question 9 - input)
