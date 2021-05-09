@@ -44,5 +44,5 @@ ${
   
   - For all questions and queries, email me at ${answers.emailAddress}`;
 };
-// The generate markdown module is exported
+// The generate markdown is exported so it can be used by the other files
 module.exports = generateMarkdown;

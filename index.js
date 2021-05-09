@@ -15,7 +15,7 @@ const validateInput = (userInput) => {
   }
 };
 
-// Array of questions for user input
+// Questions for the user input
 const questions = [
   {
     type: "input",

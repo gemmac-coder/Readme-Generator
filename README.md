@@ -8,10 +8,6 @@
 
 I was tasked to create a professional README generator that would allow developers to answer a series of questions about their application. Their answers to the questions would then be returned in a README markdown, ensuring that they had a comprehensive README file for their application, which conformed to best practices.
 
-## Getting Started
-
-i.e. instructions for how to clone the repo
-
 ## Installation
 
 1. Firstly fork and clone this repo to your personal GitHub. Follow [these](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo) instructions to fork and clone this repo.
@@ -34,4 +30,10 @@ Once you have answered all questions, you will see that your new README has been
 
 No applicable tests.
 
+## Contribution
+
+Simply fork and clone my repo as outlined above, or email me for any bespoke queries: gemmacollinge_71@hotmail.com
+
 ## Link to Video Recording
+
+https://drive.google.com/file/d/1f1wYxOOfyBdIxZY_g37oC11ngaEuKoii/view?usp=sharing
