@@ -1,11 +1,10 @@
-const inquirer = require("inquirer");
-
+// The generated_readme markdown function returns template string with content passed in from the answers object
 const generateMarkdown = (answers) => {
   return `
   # ${answers.applicationTitle}
 ${
   answers.applicationLicense !== "None"
-    ? `![${answers.applicationLicense} license](https://img.shields.io/badge/license-${answers.applicationLicense}-green)`
+    ? `[![${answers.applicationLicense} license](https://img.shields.io/badge/license-${answers.applicationLicense}-green)](https://opensource.org/licenses/${answers.applicationLicense})`
     : ""
 }
   
@@ -15,7 +14,7 @@ ${
   ## Table of Contents
   
   - [Application Title](#application-title)
-    - [Description of Project](#description-of-application)
+    - [Description of Application](#description-of-application)
     - [Table of Contents](#table-of-contents)
     - [Installation](#installation)
     - [Usage](#usage)
@@ -25,7 +24,7 @@ ${
     - [Questions](#questions)
   
   ## Installation
-  ${answers.installationInstructions}
+ ${answers.installationInstructions}
   
   ## Usage
   ${answers.usageInstructions}
@@ -45,8 +44,5 @@ ${
   
   - For all questions and queries, email me at ${answers.emailAddress}`;
 };
-
+// The generate markdown module is exported
 module.exports = generateMarkdown;
-
-// fs write file pseudo code
-// fsPromises.writeFile(file, data[, options])
